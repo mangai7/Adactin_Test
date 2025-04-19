@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="21" passed="20" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-19T20:14:01 IST" name="Suite" finished-at="2025-04-19T20:15:59 IST" duration-ms="117464">
+    <groups>
+    </groups>
+    <test started-at="2025-04-19T20:14:01 IST" name="Test" finished-at="2025-04-19T20:15:59 IST" duration-ms="117464">
+      <class name="testbase.BookHotelTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testbase.BookHotelTest@dd8ba08]" started-at="2025-04-19T20:14:50 IST" name="setup" finished-at="2025-04-19T20:14:55 IST" duration-ms="4325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testbase.BookHotelTest@dd8ba08]" started-at="2025-04-19T20:14:55 IST" name="setUpTest" finished-at="2025-04-19T20:15:03 IST" duration-ms="8006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="TC_13_testWithOutClickingRadioButton()[pri:1, instance:testbase.BookHotelTest@dd8ba08]" started-at="2025-04-19T20:15:03 IST" name="TC_13_testWithOutClickingRadioButton" finished-at="2025-04-19T20:15:03 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_13_testWithOutClickingRadioButton -->
+        <test-method signature="TC_14_testGoToBookingPage()[pri:2, instance:testbase.BookHotelTest@dd8ba08]" started-at="2025-04-19T20:15:03 IST" name="TC_14_testGoToBookingPage" finished-at="2025-04-19T20:15:04 IST" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_14_testGoToBookingPage -->
+        <test-method signature="TC_15_testWithoutFirstname()[pri:3, instance:testbase.BookHotelTest@dd8ba08]" started-at="2025-04-19T20:15:04 IST" name="TC_15_testWithoutFirstname" finished-at="2025-04-19T20:15:09 IST" duration-ms="5219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_15_testWithoutFirstname -->
+        <test-method signature="TC_16_testWithoutLastname()[pri:4, instance:testbase.BookHotelTest@dd8ba08]" started-at="2025-04-19T20:15:09 IST" name="TC_16_testWithoutLastname" finished-at="2025-04-19T20:15:14 IST" duration-ms="5026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_16_testWithoutLastname -->
+        <test-method signature="TC_17_testWithoutBillingAddress()[pri:5, instance:testbase.BookHotelTest@dd8ba08]" started-at="2025-04-19T20:15:14 IST" name="TC_17_testWithoutBillingAddress" finished-at="2025-04-19T20:15:19 IST" duration-ms="4490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_17_testWithoutBillingAddress -->
+        <test-method signature="TC_18_testWithoutCardNumber()[pri:6, instance:testbase.BookHotelTest@dd8ba08]" started-at="2025-04-19T20:15:19 IST" name="TC_18_testWithoutCardNumber" finished-at="2025-04-19T20:15:24 IST" duration-ms="5091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_18_testWithoutCardNumber -->
+        <test-method signature="TC_19_testBookWithValidData()[pri:7, instance:testbase.BookHotelTest@dd8ba08]" started-at="2025-04-19T20:15:24 IST" name="TC_19_testBookWithValidData" finished-at="2025-04-19T20:15:31 IST" duration-ms="7136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_19_testBookWithValidData -->
+        <test-method signature="TC_20_testItinerary()[pri:8, instance:testbase.BookHotelTest@dd8ba08]" started-at="2025-04-19T20:15:31 IST" name="TC_20_testItinerary" finished-at="2025-04-19T20:15:43 IST" duration-ms="12062" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.switchTo()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.switchTo()" because "this.driver" is null
+at testbase.BookHotelTest.TC_20_testItinerary(BookHotelTest.java:181)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_20_testItinerary -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testbase.BookHotelTest@dd8ba08]" started-at="2025-04-19T20:15:43 IST" name="tearDown" finished-at="2025-04-19T20:15:43 IST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testbase.BookHotelTest -->
+      <class name="testbase.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testbase.LoginTest@5876a9af]" started-at="2025-04-19T20:14:02 IST" name="setup" finished-at="2025-04-19T20:14:05 IST" duration-ms="3907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testbase.LoginTest@5876a9af]" started-at="2025-04-19T20:14:05 IST" name="setUpTest" finished-at="2025-04-19T20:14:05 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="TC_01_testLoginButtonVisible()[pri:1, instance:testbase.LoginTest@5876a9af]" started-at="2025-04-19T20:14:05 IST" name="TC_01_testLoginButtonVisible" finished-at="2025-04-19T20:14:06 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_testLoginButtonVisible -->
+        <test-method signature="TC_02_tesLogintButtonClickable()[pri:2, instance:testbase.LoginTest@5876a9af]" started-at="2025-04-19T20:14:06 IST" name="TC_02_tesLogintButtonClickable" finished-at="2025-04-19T20:14:06 IST" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_tesLogintButtonClickable -->
+        <test-method signature="TC_03_testInvalidUsernameAndvalidPassword()[pri:3, instance:testbase.LoginTest@5876a9af]" started-at="2025-04-19T20:14:06 IST" name="TC_03_testInvalidUsernameAndvalidPassword" finished-at="2025-04-19T20:14:07 IST" duration-ms="1010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_testInvalidUsernameAndvalidPassword -->
+        <test-method signature="TC_04_testInvalidUsernameAndValidPassword()[pri:4, instance:testbase.LoginTest@5876a9af]" started-at="2025-04-19T20:14:07 IST" name="TC_04_testInvalidUsernameAndValidPassword" finished-at="2025-04-19T20:14:07 IST" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_testInvalidUsernameAndValidPassword -->
+        <test-method signature="TC_06_testvalidlogin()[pri:6, instance:testbase.LoginTest@5876a9af]" started-at="2025-04-19T20:14:07 IST" name="TC_06_testvalidlogin" finished-at="2025-04-19T20:14:09 IST" duration-ms="1697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_06_testvalidlogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testbase.LoginTest@5876a9af]" started-at="2025-04-19T20:14:09 IST" name="tearDown" finished-at="2025-04-19T20:14:09 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testbase.LoginTest -->
+      <class name="testbase.ChangePasswordTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testbase.ChangePasswordTest@245b4bdc]" started-at="2025-04-19T20:15:43 IST" name="setup" finished-at="2025-04-19T20:15:47 IST" duration-ms="4184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testbase.ChangePasswordTest@245b4bdc]" started-at="2025-04-19T20:15:47 IST" name="setUpTest" finished-at="2025-04-19T20:15:48 IST" duration-ms="1314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="TC_21_testChangePassword()[pri:0, instance:testbase.ChangePasswordTest@245b4bdc]" started-at="2025-04-19T20:15:48 IST" name="TC_21_testChangePassword" finished-at="2025-04-19T20:15:51 IST" duration-ms="2557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_21_testChangePassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testbase.ChangePasswordTest@245b4bdc]" started-at="2025-04-19T20:15:51 IST" name="tearDown" finished-at="2025-04-19T20:15:51 IST" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testbase.ChangePasswordTest -->
+      <class name="testbase.SearchHotelTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testbase.SearchHotelTest@515aebb0]" started-at="2025-04-19T20:14:09 IST" name="setup" finished-at="2025-04-19T20:14:12 IST" duration-ms="3487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testbase.SearchHotelTest@515aebb0]" started-at="2025-04-19T20:14:12 IST" name="setUpTest" finished-at="2025-04-19T20:14:14 IST" duration-ms="1485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="TC_07_testSearchHotel()[pri:0, instance:testbase.SearchHotelTest@515aebb0]" started-at="2025-04-19T20:14:14 IST" name="TC_07_testSearchHotel" finished-at="2025-04-19T20:14:21 IST" duration-ms="6630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_07_testSearchHotel -->
+        <test-method signature="TC_08_testMissingInDate()[pri:2, instance:testbase.SearchHotelTest@515aebb0]" started-at="2025-04-19T20:14:21 IST" name="TC_08_testMissingInDate" finished-at="2025-04-19T20:14:26 IST" duration-ms="5457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_08_testMissingInDate -->
+        <test-method signature="TC_09_testMissingOutDate()[pri:3, instance:testbase.SearchHotelTest@515aebb0]" started-at="2025-04-19T20:14:26 IST" name="TC_09_testMissingOutDate" finished-at="2025-04-19T20:14:32 IST" duration-ms="5739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_09_testMissingOutDate -->
+        <test-method signature="TC_10_testDateBedoreInDate()[pri:4, instance:testbase.SearchHotelTest@515aebb0]" started-at="2025-04-19T20:14:32 IST" name="TC_10_testDateBedoreInDate" finished-at="2025-04-19T20:14:38 IST" duration-ms="6346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_10_testDateBedoreInDate -->
+        <test-method signature="TC_11_testWithoutLocation()[pri:4, instance:testbase.SearchHotelTest@515aebb0]" started-at="2025-04-19T20:14:38 IST" name="TC_11_testWithoutLocation" finished-at="2025-04-19T20:14:44 IST" duration-ms="6043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_11_testWithoutLocation -->
+        <test-method signature="TC_12_testWithoutRoomType()[pri:5, instance:testbase.SearchHotelTest@515aebb0]" started-at="2025-04-19T20:14:44 IST" name="TC_12_testWithoutRoomType" finished-at="2025-04-19T20:14:50 IST" duration-ms="6171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_12_testWithoutRoomType -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testbase.SearchHotelTest@515aebb0]" started-at="2025-04-19T20:14:50 IST" name="tearDown" finished-at="2025-04-19T20:14:50 IST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testbase.SearchHotelTest -->
+      <class name="testbase.LogoutTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testbase.LogoutTest@6c64cb25]" started-at="2025-04-19T20:15:51 IST" name="setup" finished-at="2025-04-19T20:15:55 IST" duration-ms="3488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testbase.LogoutTest@6c64cb25]" started-at="2025-04-19T20:15:55 IST" name="setUpTest" finished-at="2025-04-19T20:15:56 IST" duration-ms="1375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="TC_22_testlogout()[pri:0, instance:testbase.LogoutTest@6c64cb25]" started-at="2025-04-19T20:15:56 IST" name="TC_22_testlogout" finished-at="2025-04-19T20:15:59 IST" duration-ms="2881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_22_testlogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testbase.LogoutTest@6c64cb25]" started-at="2025-04-19T20:15:59 IST" name="tearDown" finished-at="2025-04-19T20:15:59 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testbase.LogoutTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

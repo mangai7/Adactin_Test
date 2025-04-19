@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods, 1 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.BookHotelTest" class="method navigator-link" hash-for-method="TC_20_testItinerary">TC_20_testItinerary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.LoginTest" class="method navigator-link" hash-for-method="TC_01_testLoginButtonVisible">TC_01_testLoginButtonVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.LoginTest" class="method navigator-link" hash-for-method="TC_02_tesLogintButtonClickable">TC_02_tesLogintButtonClickable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.LoginTest" class="method navigator-link" hash-for-method="TC_03_testInvalidUsernameAndvalidPassword">TC_03_testInvalidUsernameAndvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.LoginTest" class="method navigator-link" hash-for-method="TC_04_testInvalidUsernameAndValidPassword">TC_04_testInvalidUsernameAndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.LoginTest" class="method navigator-link" hash-for-method="TC_06_testvalidlogin">TC_06_testvalidlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.SearchHotelTest" class="method navigator-link" hash-for-method="TC_07_testSearchHotel">TC_07_testSearchHotel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.SearchHotelTest" class="method navigator-link" hash-for-method="TC_08_testMissingInDate">TC_08_testMissingInDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.SearchHotelTest" class="method navigator-link" hash-for-method="TC_09_testMissingOutDate">TC_09_testMissingOutDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.SearchHotelTest" class="method navigator-link" hash-for-method="TC_10_testDateBedoreInDate">TC_10_testDateBedoreInDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.SearchHotelTest" class="method navigator-link" hash-for-method="TC_11_testWithoutLocation">TC_11_testWithoutLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.SearchHotelTest" class="method navigator-link" hash-for-method="TC_12_testWithoutRoomType">TC_12_testWithoutRoomType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.BookHotelTest" class="method navigator-link" hash-for-method="TC_13_testWithOutClickingRadioButton">TC_13_testWithOutClickingRadioButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.BookHotelTest" class="method navigator-link" hash-for-method="TC_14_testGoToBookingPage">TC_14_testGoToBookingPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.BookHotelTest" class="method navigator-link" hash-for-method="TC_15_testWithoutFirstname">TC_15_testWithoutFirstname</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.BookHotelTest" class="method navigator-link" hash-for-method="TC_16_testWithoutLastname">TC_16_testWithoutLastname</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.BookHotelTest" class="method navigator-link" hash-for-method="TC_17_testWithoutBillingAddress">TC_17_testWithoutBillingAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.BookHotelTest" class="method navigator-link" hash-for-method="TC_18_testWithoutCardNumber">TC_18_testWithoutCardNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.BookHotelTest" class="method navigator-link" hash-for-method="TC_19_testBookWithValidData">TC_19_testBookWithValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.ChangePasswordTest" class="method navigator-link" hash-for-method="TC_21_testChangePassword">TC_21_testChangePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testbase.LogoutTest" class="method navigator-link" hash-for-method="TC_22_testlogout">TC_22_testlogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testbase.BookHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_20_testItinerary">
+                  </a> <!-- TC_20_testItinerary -->
+                  <span class="method-name">TC_20_testItinerary</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.switchTo()&quot; because &quot;this.driver&quot; is null
+	at testbase.BookHotelTest.TC_20_testItinerary(BookHotelTest.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testbase.LogoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_22_testlogout">
+                  </a> <!-- TC_22_testlogout -->
+                  <span class="method-name">TC_22_testlogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testbase.ChangePasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_21_testChangePassword">
+                  </a> <!-- TC_21_testChangePassword -->
+                  <span class="method-name">TC_21_testChangePassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testbase.BookHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_13_testWithOutClickingRadioButton">
+                  </a> <!-- TC_13_testWithOutClickingRadioButton -->
+                  <span class="method-name">TC_13_testWithOutClickingRadioButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_14_testGoToBookingPage">
+                  </a> <!-- TC_14_testGoToBookingPage -->
+                  <span class="method-name">TC_14_testGoToBookingPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_15_testWithoutFirstname">
+                  </a> <!-- TC_15_testWithoutFirstname -->
+                  <span class="method-name">TC_15_testWithoutFirstname</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_16_testWithoutLastname">
+                  </a> <!-- TC_16_testWithoutLastname -->
+                  <span class="method-name">TC_16_testWithoutLastname</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_17_testWithoutBillingAddress">
+                  </a> <!-- TC_17_testWithoutBillingAddress -->
+                  <span class="method-name">TC_17_testWithoutBillingAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_18_testWithoutCardNumber">
+                  </a> <!-- TC_18_testWithoutCardNumber -->
+                  <span class="method-name">TC_18_testWithoutCardNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_19_testBookWithValidData">
+                  </a> <!-- TC_19_testBookWithValidData -->
+                  <span class="method-name">TC_19_testBookWithValidData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testbase.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_01_testLoginButtonVisible">
+                  </a> <!-- TC_01_testLoginButtonVisible -->
+                  <span class="method-name">TC_01_testLoginButtonVisible</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_02_tesLogintButtonClickable">
+                  </a> <!-- TC_02_tesLogintButtonClickable -->
+                  <span class="method-name">TC_02_tesLogintButtonClickable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_03_testInvalidUsernameAndvalidPassword">
+                  </a> <!-- TC_03_testInvalidUsernameAndvalidPassword -->
+                  <span class="method-name">TC_03_testInvalidUsernameAndvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_04_testInvalidUsernameAndValidPassword">
+                  </a> <!-- TC_04_testInvalidUsernameAndValidPassword -->
+                  <span class="method-name">TC_04_testInvalidUsernameAndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_06_testvalidlogin">
+                  </a> <!-- TC_06_testvalidlogin -->
+                  <span class="method-name">TC_06_testvalidlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testbase.SearchHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_07_testSearchHotel">
+                  </a> <!-- TC_07_testSearchHotel -->
+                  <span class="method-name">TC_07_testSearchHotel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_08_testMissingInDate">
+                  </a> <!-- TC_08_testMissingInDate -->
+                  <span class="method-name">TC_08_testMissingInDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_09_testMissingOutDate">
+                  </a> <!-- TC_09_testMissingOutDate -->
+                  <span class="method-name">TC_09_testMissingOutDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_10_testDateBedoreInDate">
+                  </a> <!-- TC_10_testDateBedoreInDate -->
+                  <span class="method-name">TC_10_testDateBedoreInDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_11_testWithoutLocation">
+                  </a> <!-- TC_11_testWithoutLocation -->
+                  <span class="method-name">TC_11_testWithoutLocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_12_testWithoutRoomType">
+                  </a> <!-- TC_12_testWithoutRoomType -->
+                  <span class="method-name">TC_12_testWithoutRoomType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/mangai/eclipse-workspace/adactingroup/src/test/java/testbase/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testbase.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testbase.SearchHotelTest&quot;/&gt;
+      &lt;class name=&quot;testbase.BookHotelTest&quot;/&gt;
+      &lt;class name=&quot;testbase.ChangePasswordTest&quot;/&gt;
+      &lt;class name=&quot;testbase.LogoutTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC_20_testItinerary')
+data.setCell(0, 2, 'testbase.BookHotelTest')
+data.setCell(0, 3, 12062);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC_19_testBookWithValidData')
+data.setCell(1, 2, 'testbase.BookHotelTest')
+data.setCell(1, 3, 7136);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_07_testSearchHotel')
+data.setCell(2, 2, 'testbase.SearchHotelTest')
+data.setCell(2, 3, 6630);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_10_testDateBedoreInDate')
+data.setCell(3, 2, 'testbase.SearchHotelTest')
+data.setCell(3, 3, 6346);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_12_testWithoutRoomType')
+data.setCell(4, 2, 'testbase.SearchHotelTest')
+data.setCell(4, 3, 6171);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_11_testWithoutLocation')
+data.setCell(5, 2, 'testbase.SearchHotelTest')
+data.setCell(5, 3, 6043);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_09_testMissingOutDate')
+data.setCell(6, 2, 'testbase.SearchHotelTest')
+data.setCell(6, 3, 5739);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC_08_testMissingInDate')
+data.setCell(7, 2, 'testbase.SearchHotelTest')
+data.setCell(7, 3, 5457);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC_15_testWithoutFirstname')
+data.setCell(8, 2, 'testbase.BookHotelTest')
+data.setCell(8, 3, 5219);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC_18_testWithoutCardNumber')
+data.setCell(9, 2, 'testbase.BookHotelTest')
+data.setCell(9, 3, 5091);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC_16_testWithoutLastname')
+data.setCell(10, 2, 'testbase.BookHotelTest')
+data.setCell(10, 3, 5026);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC_17_testWithoutBillingAddress')
+data.setCell(11, 2, 'testbase.BookHotelTest')
+data.setCell(11, 3, 4490);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TC_22_testlogout')
+data.setCell(12, 2, 'testbase.LogoutTest')
+data.setCell(12, 3, 2881);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TC_21_testChangePassword')
+data.setCell(13, 2, 'testbase.ChangePasswordTest')
+data.setCell(13, 3, 2557);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC_06_testvalidlogin')
+data.setCell(14, 2, 'testbase.LoginTest')
+data.setCell(14, 3, 1697);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC_03_testInvalidUsernameAndvalidPassword')
+data.setCell(15, 2, 'testbase.LoginTest')
+data.setCell(15, 3, 1010);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TC_14_testGoToBookingPage')
+data.setCell(16, 2, 'testbase.BookHotelTest')
+data.setCell(16, 3, 594);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TC_04_testInvalidUsernameAndValidPassword')
+data.setCell(17, 2, 'testbase.LoginTest')
+data.setCell(17, 3, 469);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TC_13_testWithOutClickingRadioButton')
+data.setCell(18, 2, 'testbase.BookHotelTest')
+data.setCell(18, 3, 453);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'TC_02_tesLogintButtonClickable')
+data.setCell(19, 2, 'testbase.LoginTest')
+data.setCell(19, 3, 89);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'TC_01_testLoginButtonVisible')
+data.setCell(20, 2, 'testbase.LoginTest')
+data.setCell(20, 3, 80);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testbase.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">3908 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_01_testLoginButtonVisible</span>
+                <span class="method-start">3933 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_02_tesLogintButtonClickable</span>
+                <span class="method-start">4019 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_03_testInvalidUsernameAndvalidPassword</span>
+                <span class="method-start">4110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_04_testInvalidUsernameAndValidPassword</span>
+                <span class="method-start">5130 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_06_testvalidlogin</span>
+                <span class="method-start">5604 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7307 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testbase.SearchHotelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7402 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">10890 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_07_testSearchHotel</span>
+                <span class="method-start">12376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_08_testMissingInDate</span>
+                <span class="method-start">19008 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_09_testMissingOutDate</span>
+                <span class="method-start">24467 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_10_testDateBedoreInDate</span>
+                <span class="method-start">30207 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_11_testWithoutLocation</span>
+                <span class="method-start">36556 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_12_testWithoutRoomType</span>
+                <span class="method-start">42603 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48776 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testbase.BookHotelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">48887 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">53213 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_13_testWithOutClickingRadioButton</span>
+                <span class="method-start">61221 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_14_testGoToBookingPage</span>
+                <span class="method-start">61677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_15_testWithoutFirstname</span>
+                <span class="method-start">62272 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_16_testWithoutLastname</span>
+                <span class="method-start">67494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_17_testWithoutBillingAddress</span>
+                <span class="method-start">72522 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_18_testWithoutCardNumber</span>
+                <span class="method-start">77014 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_19_testBookWithValidData</span>
+                <span class="method-start">82108 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_20_testItinerary</span>
+                <span class="method-start">89248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">101320 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testbase.ChangePasswordTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">101416 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">105601 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_21_testChangePassword</span>
+                <span class="method-start">106919 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">109477 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testbase.LogoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">109567 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">113056 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_22_testlogout</span>
+                <span class="method-start">114437 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">117320 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
